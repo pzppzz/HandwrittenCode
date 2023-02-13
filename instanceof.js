@@ -1,4 +1,5 @@
-const isObject = (val) => typeof val === "function" || typeof val === "object";
+const isObject = (val) =>
+  val !== null && (typeof val === "function" || typeof val === "object");
 /**
  * 判断原理 判断一个对象的原型链上是否存在另一个对象的原型
  */
